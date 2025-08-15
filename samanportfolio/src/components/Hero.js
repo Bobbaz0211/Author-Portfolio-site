@@ -1,6 +1,10 @@
+import { use, useState } from "react";
+
 function Hero() {
+    const [booksIsOpen, setBooksIsOpen] = useState(false);
+
   function viewBooks() {
-    console.log("clicked")
+    setBooksIsOpen(true);
   }
 
   return (
